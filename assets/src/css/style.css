@@ -6,6 +6,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    border: 0.5;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -120,7 +121,7 @@ form {
     bottom: 0%;
     background: #FFFFFF;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .btn-form {
@@ -167,18 +168,7 @@ h4 .btn-text {
 /* Formatando Inputs
 ---------------------*/
 
-.inputs {
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-    position: absolute;
-    left: 7.41%;
-    right: 7.41%;
-    top: 8.44%;
-    bottom: 79.75%;
-}
-
-.nome{
+.input-padrao {
     position: absolute;
     left: 0%;
     right: 0%;
@@ -190,11 +180,94 @@ h4 .btn-text {
     border-radius: 5px;
 }
 
-.nome::placeholder {
+.nome {
+    position: absolute;
+    left: 7.41%;
+    right: 7.41%;
+    top: 8.44%;
+    bottom: 79.75%;
+}
+
+.sobrenome {
+    position: absolute;
+    left: 7.41%;
+    right: 7.41%;
+    top: 24.47%;
+    bottom: 63.71%;
+}
+
+.email {
+    position: absolute;
+    left: 7.41%;
+    right: 7.41%;
+    top: 40.51%;
+    bottom: 47.68%;
+}
+
+.senha {
+    position: absolute;
+    left: 7.41%;
+    right: 7.41%;
+    top: 56.54%;
+    bottom: 31.65%;
+}
+
+#placeholderNome::placeholder {
+    position: absolute;
+    height: 26px;
+    left: 6.96%;
+    right: 77.39%;
+    top: calc(50% - 26px/2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+#placeholderSobrenome::placeholder {
     position: absolute;
     height: 26px;
     left: 6.96%;
     right: 76.09%;
+    top: calc(50% - 26px/2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+#placeholderEmail::placeholder {
+    position: absolute;
+    height: 26px;
+    left: 6.96%;
+    right: 70.43%;
+    top: calc(50% - 26px/2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+#placeholderSenha::placeholder {
+    position: absolute;
+    height: 26px;
+    left: 6.96%;
+    right: 77.39%;
     top: calc(50% - 26px/2);
     font-family: 'Poppins';
     font-style: normal;

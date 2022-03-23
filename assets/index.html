@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <!--- Início do Container --->
@@ -30,11 +30,11 @@
         <!--- Início do Formulário --->
         <div class="formulario">
             <form action="">
-                <div class="inputs">
-                    <input type="text" class="nome" placeholder="First Name">
-                    <input type="text" class="sobrenome" placeholder="Last Name">
-                    <input type="text" class="email" placeholder="E-mail Address">
-                    <input type="text" class="senha" placeholder="Password">
+                <div class="input-padrao">
+                    <input type="text" id="placeholderNome" class="nome" placeholder="First Name">
+                    <input type="text" id="placeholderSobrenome" class="sobrenome" placeholder="Last Name">
+                    <input type="text" id="placeholderEmail" class="email" placeholder="E-mail Address">
+                    <input type="text" id="placeholderSenha" class="senha" placeholder="Password">
                 </div>
 
                 <div class="btn-form">
@@ -48,5 +48,8 @@
         </div>  <!--- Fim do Formulário --->
         
     </div>  <!--- Fim do Container --->
+
+    <!--- Script --->
+    <script src="src/js/script.js"></script>
 </body>
 </html>
