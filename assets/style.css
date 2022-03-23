@@ -1,0 +1,208 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+
+/* CSS Reset
+-------------*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Formatações gerais
+----------------------*/
+body {
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+    left: 0px;
+    top: 0px;
+    background: #FF7979;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+}
+
+
+
+/* Formatando textos
+---------------------*/
+.texto-principal {
+    position: absolute;
+    width: 525px;
+    height: 220px;
+    left: 165px;
+    top: 290px;
+}
+
+h1 {
+    position: absolute;
+    height: 131px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 131px/2 - 44.5px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+    color: #FFFFFF;
+}
+
+h4 {
+    position: absolute;
+    height: 26px;
+    left: 20.74%;
+    right: 20.74%;
+    top: calc(50% - 26px/2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.267857px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+p {
+    position: absolute;
+    height: 78px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 78px/2 + 71px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/* Formatando botão do topo
+----------------------------*/
+.btn-top {
+    position: absolute;
+    width: 540px;
+    height: 60px;
+    left: 735px;
+    top: 121px;
+}
+
+.btn-top-roxo {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+}
+
+/* Formatando o formulário
+---------------------------*/
+.formulario {
+    position: absolute;
+    width: 540px;
+    height: 474px;
+    left: 735px;
+    top: 205px;
+}
+
+form {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+}
+
+.btn-form {
+    position: absolute;
+    left: 7.41%;
+    right: 7.41%;
+    top: 72.57%;
+    bottom: 15.61%;
+    background: #38CC8B;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+}
+
+h4 .btn-text {
+    position: absolute;
+    height: 26px;
+    left: 32.22%;
+    right: 32.59%;
+    top: calc(50% - 26px/2 + 135px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.termos {
+    position: absolute;
+    height: 26px;
+    left: 16.02%;
+    right: 16.02%;
+    top: calc(50% - 26px/2 + 184px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    color: #BAB7D4;
+}
+
+/* Formatando Inputs
+---------------------*/
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    position: absolute;
+    left: 7.41%;
+    right: 7.41%;
+    top: 8.44%;
+    bottom: 79.75%;
+}
+
+.nome{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.nome::placeholder {
+    position: absolute;
+    height: 26px;
+    left: 6.96%;
+    right: 76.09%;
+    top: calc(50% - 26px/2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
