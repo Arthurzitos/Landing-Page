@@ -18,13 +18,22 @@ body {
     height: 800px;
     left: 0px;
     top: 0px;
+    
     background: #FF7979;
+    
     min-height: 100vh;
     min-width: 100vh;
     display: flex;
 }
 
-
+img {
+    position: relative;
+    width: 1440px;
+    height: 800px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
 
 /* Formatando textos
 ---------------------*/
@@ -124,22 +133,20 @@ form {
     border-radius: 15px;
 }
 
-.btn-form {
+#btn-verde {
     position: absolute;
     left: 7.41%;
     right: 7.41%;
     top: 72.57%;
     bottom: 15.61%;
     background: #38CC8B;
+    cursor: pointer;
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
     border-radius: 5px;
 }
 
-h4 .btn-text {
-    position: absolute;
-    height: 26px;
-    left: 32.22%;
-    right: 32.59%;
+ .btn-text {
+    position: relative;
     top: calc(50% - 26px/2 + 135px);
     font-family: 'Poppins';
     font-style: normal;
@@ -167,57 +174,78 @@ h4 .btn-text {
 
 /* Formatando Inputs
 ---------------------*/
-
 .input-padrao {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: #FFFFFF;
-    border: 1px solid #DEDEDE;
-    box-sizing: border-box;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
 }
 
-.nome {
+.nome{
     position: absolute;
     left: 7.41%;
     right: 7.41%;
     top: 8.44%;
     bottom: 79.75%;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
 }
 
-.sobrenome {
+.sobrenome{
     position: absolute;
     left: 7.41%;
     right: 7.41%;
-    top: 24.47%;
-    bottom: 63.71%;
+    top: 22.15%;
+    bottom: 66.03%;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+
 }
 
-.email {
+.email{
     position: absolute;
     left: 7.41%;
     right: 7.41%;
     top: 40.51%;
     bottom: 47.68%;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
 }
 
-.senha {
+.senha{
     position: absolute;
     left: 7.41%;
     right: 7.41%;
     top: 56.54%;
     bottom: 31.65%;
-}
-
-#placeholderNome::placeholder {
-    position: absolute;
-    height: 26px;
-    left: 6.96%;
-    right: 77.39%;
-    top: calc(50% - 26px/2);
+    padding: 4px 12px;
+    box-sizing: border-box;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -229,53 +257,4 @@ h4 .btn-text {
     opacity: 0.75;
 }
 
-#placeholderSobrenome::placeholder {
-    position: absolute;
-    height: 26px;
-    left: 6.96%;
-    right: 76.09%;
-    top: calc(50% - 26px/2);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.25px;
-    color: #3D3B48;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-}
 
-#placeholderEmail::placeholder {
-    position: absolute;
-    height: 26px;
-    left: 6.96%;
-    right: 70.43%;
-    top: calc(50% - 26px/2);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.25px;
-    color: #3D3B48;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-}
-
-#placeholderSenha::placeholder {
-    position: absolute;
-    height: 26px;
-    left: 6.96%;
-    right: 77.39%;
-    top: calc(50% - 26px/2);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.25px;
-    color: #3D3B48;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-}

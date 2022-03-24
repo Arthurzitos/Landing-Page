@@ -10,6 +10,7 @@
 <body>
     <!--- Início do Container --->
     <div class="container">
+        <img src="/assets/src/img/BG-LandingPage.png">
         <!--- Início do texto principal --->
         <div class="texto-principal">
             <h1>Learn to code by watching others</h1>
@@ -29,17 +30,22 @@
 
         <!--- Início do Formulário --->
         <div class="formulario">
-            <form action="">
-                <div class="input-padrao">
-                    <input type="text" id="placeholderNome" class="nome" placeholder="First Name">
-                    <input type="text" id="placeholderSobrenome" class="sobrenome" placeholder="Last Name">
-                    <input type="text" id="placeholderEmail" class="email" placeholder="E-mail Address">
-                    <input type="text" id="placeholderSenha" class="senha" placeholder="Password">
-                </div>
+            <form action="" id="register-form">
 
-                <div class="btn-form">
-                    <h4 class="btn-text">CLAIM YOUR FREE TRIAL</h4>
+                <div class="input-padrao">
+                    <input type="text" class="nome" placeholder="First Name">
                 </div>
+                <div class="input-padrao">
+                    <input type="text" class="sobrenome" placeholder="Last Name">
+                </div>
+                <div class="input-padrao">
+                    <input type="email" class="email" placeholder="E-mail Address">
+                </div>
+                <div class="input-padrao">
+                    <input type="password" class="senha" placeholder="Password">
+                </div>
+                
+                    <button type="submit" class="btn-text" id="btn-verde">CLAIM YOUR FREE TRIAL</button>
                     <p class="termos">
                         By clicking the button, you are agreeing to our Terms and Services
                     </p>
