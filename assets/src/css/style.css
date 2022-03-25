@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Poppins);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* CSS Reset
 -------------*/
@@ -26,6 +26,7 @@ img {
 
 .container {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -37,12 +38,13 @@ img {
 /* Formatando textos
 ---------------------*/
 .texto-principal {
+    justify-content: center;
+    align-items: center;
     width: 525px;
-    height: 220px;
+    
 }
 
 h1 {
-    height: 131px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -52,8 +54,7 @@ h1 {
     color: #FFFFFF;
 }
 
-h4 {
-    height: 26px;
+h4 {padding: 12px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -77,6 +78,8 @@ p {
 /* Formatando botão do topo
 ----------------------------*/
 .btn-roxo {
+    justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
     background: #5E54A4;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
@@ -88,6 +91,8 @@ p {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     padding: 15px;
     background: #FFFFFF;
@@ -96,6 +101,7 @@ form {
 }
 
 #btn-verde {
+    padding: 7px;
     background: #38CC8B;
     cursor: pointer;
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
@@ -188,11 +194,16 @@ form {
 
 /* Estilizando Formulário no estado ativo
 ------------------------------------------*/
+.inputs > span {
+    display: none
+}
+
 .error {
     border: 2px solid #FF7979;
 }
 
-.error-text {
+span.error-text {
+    display: inline;
     width: 100%;
     text-align: right;
     font-family: 'Poppins';
