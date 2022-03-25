@@ -10,7 +10,6 @@
 <body>
     <!--- Início do Container --->
     <div class="container">
-        <img src="/assets/src/img/BG-LandingPage.png">
         <!--- Início do texto principal --->
         <div class="texto-principal">
             <h1>Learn to code by watching others</h1>
@@ -21,41 +20,52 @@
             </p>
         </div>  <!--- Fim do texto principal --->
 
-        <!--- Início do Botão Roxo --->
-        <div class="btn-top">
-            <div class="btn-top-roxo">
+        <!--- Início do lado direito --->
+        <div class="lado-direito">
+
+            <!--- Início do Botão Roxo --->
+            <div class="btn-roxo">
                 <h4>Try it free 7 days then $20/mo. thereafter</h4>
-            </div>
-        </div>  <!--- Fim do Botão Roxo --->
+            </div>  <!--- Fim do Botão Roxo --->
 
-        <!--- Início do Formulário --->
-        <div class="formulario">
-            <form action="" id="register-form">
-
-                <div class="input-padrao">
-                    <input type="text" class="nome" placeholder="First Name">
-                </div>
-                <div class="input-padrao">
-                    <input type="text" class="sobrenome" placeholder="Last Name">
-                </div>
-                <div class="input-padrao">
-                    <input type="email" class="email" placeholder="E-mail Address">
-                </div>
-                <div class="input-padrao">
-                    <input type="password" class="senha" placeholder="Password">
-                </div>
+            <!--- Início do Formulário --->
+            <form action="" name="form-principal">
+                
+                    <div class="inputs">
+                        <input type="text" class="nome error" placeholder="First Name">
+                        <span class="error-text">First Name cannot be empty</span>
+                    </div>
+                
+                    <div class="inputs">
+                        <input type="text" class="sobrenome error" placeholder="Last Name">
+                        <span class="error-text">Last Name cannot be empty</span>
+                    </div>
+                
+                    <div class="inputs">
+                        <input type="email" class="email error" name="email" placeholder="E-mail Address">
+                        <span class="error-text">Looks like this is not an email</span>
+                    </div class="inputs">
+                
+                    <div class="inputs">
+                        <input type="password" class="senha error" placeholder="Password">
+                        <span class="error-text">Password cannot be empty</span>
+                    </div>
                 
                     <button type="submit" class="btn-text" id="btn-verde">CLAIM YOUR FREE TRIAL</button>
-                    <p class="termos">
-                        By clicking the button, you are agreeing to our Terms and Services
-                    </p>
-            </form>
+                        <p class="termos">
+                            By clicking the button, you are agreeing to our Terms and Services
+                        </p>
+                
+            </form>  <!--- Fim do Formulário --->
+        </div>  <!--- Fim do lado direito--->
             
-        </div>  <!--- Fim do Formulário --->
+            
+         
         
     </div>  <!--- Fim do Container --->
 
-    <!--- Script --->
+    <!--- Scripts --->
     <script src="src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ce922f0bfb.js" crossorigin="anonymous"></script>
 </body>
 </html>
